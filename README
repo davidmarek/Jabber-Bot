@@ -1,0 +1,39 @@
+Jabber-Bot is pluginable lightweight python jabber bot. Every command the bot
+can process has to be written as plugin. Writing plugin is easy and everyone who
+knows python can write his own in few minutes.
+
+Jabber-Bot comes with few plugins. They are mainly for czech users.
+Plugins:
+    * FML - messages from http://fmylife.com
+    * MDT - messages from http://mydrunktexts.com
+    * IDOS(czech) - search connections in public transport system
+    * MHD(czech) - search connections in public transport system in cities
+    * Weather(czech) - weather information
+
+Write your own plugin! You just have to write one module file and place it in
+plugins directory. Here is template:
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+class MyPlugin:
+    """Write help for your plugin here"""
+
+    def __init__(self):
+        # Write initialization code here
+        pass
+
+    def run(self, contact, msg):
+        # Important attributes of contact: contact.get_jid() and contact.send(msg)
+        # msg is what user sent you without plugin name
+        # Write main logic of your plugin here
+        pass
+
+    def exit(self):
+        # Write clean up code
+        pass
+
+provides = {'plugin command' : MyPlugin}
+
+
+
