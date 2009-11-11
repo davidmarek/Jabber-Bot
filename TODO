@@ -1,0 +1,7 @@
+TODO:
+    * Opravit at, aby fungovalo "at now" a "at 1s"
+    * Zkontrolovat ostatni pluginy a jejich funkcnost
+    * Vytvorit pomocnou tridu pro praci se strankami a strcit do ni kod z mdt
+    * Vytvorit datovou strukturu, kterou by mohly pouzivat pluginy pro ukladani si informaci a udelat ji perzistentni
+    * Do idosu pripsat podporu "next" a "prev"
+    * Udelat moznost vytvaret si aliasy
