@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import xml.etree.ElementTree as et
+try:
+    import elementtree.ElementTree as et
+except ImportError:
+    import xml.etree.ElementTree as et
+
 import urllib
 
 class FMyLife:
