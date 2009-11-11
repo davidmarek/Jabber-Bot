@@ -129,7 +129,6 @@ class MHD(IDOS):
         page = opener.open(url % data)
 
         soup = BeautifulSoup.BeautifulSoup(page.read())
-        print soup.prettify()
 
         return self.format_output(soup)
 
